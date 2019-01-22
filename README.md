@@ -1,1 +1,1 @@
-SPRING MVC WITH Hibernate.
+Spring exercise with Hibernate.
