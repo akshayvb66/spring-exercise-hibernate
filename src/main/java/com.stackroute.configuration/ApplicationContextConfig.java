@@ -26,8 +26,8 @@ public class ApplicationContextConfig {
         BasicDataSource dataSource = new BasicDataSource();
 
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/User");
-        dataSource.setUsername("naneeth");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/userhb");
+        dataSource.setUsername("akshay");
         dataSource.setPassword("password");
 
         return dataSource;

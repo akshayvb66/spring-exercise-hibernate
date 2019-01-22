@@ -35,7 +35,7 @@ public class UserController {
             user.setUsername(name);
             user.setPassword(password);
             boolean status = userDao.saveTrack(user);
-            model.addAttribute("user",user.getUsername());
+            model.addAttribute("username",user.getUsername());
             if (status) {
                 model.addAttribute("users", userDao.getAllTracks());
                 return "login";
@@ -47,22 +47,5 @@ public class UserController {
 
     }
 }
-//
-//    @DeleteMapping("delete")
-//    public String deleteTrack(@RequestParam String id) {
-//        userDao.deleteTrack(Integer.parseInt(id));
-//        return "redirect:/";
 
-
-////    }
-//
-//    @PostMapping("update")
-//    public String updateTrack(HttpServletRequest request, HttpServletResponse response,@RequestParam("userName") String name,@RequestParam("userPassword") String password) {
-//        User updateTrack = new User();
-//        updateTrack.setId(Integer.parseInt(request.getParameter("id")));
-//        updateTrack.setUsername(name);
-//        updateTrack.setPassword(password);
-//        userDao.UpdateTrack(updateTrack);
-//        return "redirect:/";
-//    }
 
